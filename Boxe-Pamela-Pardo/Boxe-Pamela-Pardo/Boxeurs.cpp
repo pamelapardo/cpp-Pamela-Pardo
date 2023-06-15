@@ -7,10 +7,13 @@
 #include <iostream>
 #include "Boxeurs.hpp"
 #include <string>
+
+//#define TRACE
+
 using namespace std;
 
 namespace Boxeurs{
-    //Declaration du constructeur
+    //Declaration du constructeur Boxeur
     Boxeur::Boxeur(string nom, double poids){
 //#ifdef TRACE
         this->nom = nom;
