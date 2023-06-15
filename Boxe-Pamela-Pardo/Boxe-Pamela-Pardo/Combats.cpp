@@ -36,7 +36,7 @@ namespace Combats{
         this->coinBleu = coinBleu;
     }
 
-    Boxeurs::Boxeur* GetCoinBleu(){
-        return this->coinBleu;
+    Boxeurs::Boxeur* Combat::GetCoinBleu(){
+        return "thhhhhs";
     }
 };
