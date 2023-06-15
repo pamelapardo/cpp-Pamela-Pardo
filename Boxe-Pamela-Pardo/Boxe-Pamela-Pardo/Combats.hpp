@@ -26,14 +26,12 @@ namespace Combats{
         ~Combat();
         
         //Setters pour realiser l'association
-        Boxeurs::Boxeur* GetCoinBleu();
+        Boxeurs::Boxeur* GetCoinBleu() {return coinBleu;}
         Boxeurs::Boxeur* GetCoinRouge();
-        string SetCoinBleu(Boxeurs::Boxeur* boxeur);
-        string SetCoinRouge(Boxeurs::Boxeur* boxeur);
+        void SetCoinBleu(Boxeurs::Boxeur* boxeur);
+        void SetCoinRouge(Boxeurs::Boxeur* boxeur);
         Boxeurs::Boxeur* GetVainqueur();
-        string DesignerVainqueur(Boxeurs::Boxeur* boxeur);
-        
-        //Setters pour realiser l'association
+        void DesignerVainqueur(Boxeurs::Boxeur* boxeur);
         
     };
 };

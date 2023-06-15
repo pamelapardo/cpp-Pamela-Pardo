@@ -24,11 +24,17 @@ namespace Combats{
         return this->niveau;
     }
 
-//Declaration du destructeur Combat
+    //Declaration du destructeur Combat
     Combat::~Combat(){
-    //#ifdef TRACE
+//#ifdef TRACE
         cout << "Destruction du combat"<< endl;
-    //#ifdef TRACE
+//#ifdef TRACE
     }
+
+    //Declaration des setters
+    void Combat:: SetCoinBleu(Boxeurs::Boxeur* coinBleu){
+        this->coinBleu = coinBleu;
+    }
+
+    string Combat::
 };
-lalalala
