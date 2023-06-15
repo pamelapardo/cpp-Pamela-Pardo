@@ -5,15 +5,17 @@
 //  Created by Pams on 15/06/2023.
 //
 #include "Boxeurs.hpp"
+#include "Combats.hpp"
 #include <iostream>
 using namespace std;
 using namespace Boxeurs;
+using namespace Combats;
 
 int main() {
     cout << "---> DEBUT" << endl << endl;
     
     
-    //Utilisation automatique de la class Boxeur
+    //Utilisation automatique d'un Boxeur
     Boxeur boxeur_1("Box_1", 75);
     cout << "Premier boxeur: " << boxeur_1.GetNom() << ", et a " << boxeur_1.GetPoids() << "kg." << " Il se trouve à: " << &boxeur_1 << endl;
     
@@ -23,5 +25,11 @@ int main() {
     cout << "Deuxième boxeur: " << boxeur_2->GetNom() << ", et a " << boxeur_2->GetPoids() << "kg." << " Il se trouve à: " << &boxeur_2 << endl;
     
     
+    //Utilisation automatique d'un Combat
+    Combat combat_1("Comb_1_1/8");
+    cout << endl << "**--Le combat de niveau " << combat_1.GetNiveau() << ", dans le Ring " << &combat_1 << "--**" << endl;
+    
+    
+    delete boxeur_2;
     cout << endl << "---> FIN" << endl;
 }

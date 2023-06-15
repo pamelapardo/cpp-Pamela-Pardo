@@ -20,6 +20,7 @@ namespace Combats{
     public:
         //Constructeur parametré:
         Combat(string niveau);
+        string GetNiveau();
         //Destructeur:
         ~Combat();
         

@@ -30,8 +30,8 @@ namespace Boxeurs{
     }
     
     Boxeur::~Boxeur(){
-#ifdef TRACE
+//#ifdef TRACE
         cout << "=> Destruction de " << this->nom << " a " << this << endl;
-#endif
+//#endif
     }
 };

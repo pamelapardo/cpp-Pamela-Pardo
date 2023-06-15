@@ -19,4 +19,15 @@ namespace Combats{
         this->niveau = niveau;
 //#ifdef TRACE
     }
+
+    string Combat::GetNiveau(){
+        return this->niveau;
+    }
+
+//Declaration du destructeur Combat
+    Combat::~Combat(){
+    //#ifdef TRACE
+        cout << "Destruction du combat"<< endl;
+    //#ifdef TRACE
+    }
 };
