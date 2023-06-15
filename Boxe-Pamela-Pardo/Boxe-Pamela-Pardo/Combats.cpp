@@ -36,5 +36,7 @@ namespace Combats{
         this->coinBleu = coinBleu;
     }
 
-    string Combat::
+    Boxeurs::Boxeur* GetCoinBleu(){
+        return this->coinBleu;
+    }
 };

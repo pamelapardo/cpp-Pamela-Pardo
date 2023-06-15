@@ -26,7 +26,7 @@ namespace Combats{
         ~Combat();
         
         //Setters pour realiser l'association
-        Boxeurs::Boxeur* GetCoinBleu() {return coinBleu;}
+        Boxeurs::Boxeur* GetCoinBleu();
         Boxeurs::Boxeur* GetCoinRouge();
         void SetCoinBleu(Boxeurs::Boxeur* boxeur);
         void SetCoinRouge(Boxeurs::Boxeur* boxeur);
