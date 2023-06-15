@@ -20,6 +20,7 @@ namespace Boxeurs{
     public:
         //Constructeur parametré:
         Boxeur(string nom, double poids);
+        //Destructeur:
         ~Boxeur();
         
         string GetNom();

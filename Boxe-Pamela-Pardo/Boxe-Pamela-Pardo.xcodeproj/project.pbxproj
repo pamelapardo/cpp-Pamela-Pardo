@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07299C552A3B33D900D20612 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07299C542A3B33D900D20612 /* main.cpp */; };
 		07299C5D2A3B342500D20612 /* Boxeurs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07299C5B2A3B342500D20612 /* Boxeurs.cpp */; };
+		07299C602A3B420D00D20612 /* Combats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07299C5E2A3B420D00D20612 /* Combats.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		07299C542A3B33D900D20612 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		07299C5B2A3B342500D20612 /* Boxeurs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Boxeurs.cpp; sourceTree = "<group>"; };
 		07299C5C2A3B342500D20612 /* Boxeurs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Boxeurs.hpp; sourceTree = "<group>"; };
+		07299C5E2A3B420D00D20612 /* Combats.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Combats.cpp; sourceTree = "<group>"; };
+		07299C5F2A3B420D00D20612 /* Combats.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Combats.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				07299C542A3B33D900D20612 /* main.cpp */,
+				07299C5E2A3B420D00D20612 /* Combats.cpp */,
+				07299C5F2A3B420D00D20612 /* Combats.hpp */,
 				07299C5B2A3B342500D20612 /* Boxeurs.cpp */,
 				07299C5C2A3B342500D20612 /* Boxeurs.hpp */,
 			);
@@ -126,6 +131,7 @@
 			files = (
 				07299C5D2A3B342500D20612 /* Boxeurs.cpp in Sources */,
 				07299C552A3B33D900D20612 /* main.cpp in Sources */,
+				07299C602A3B420D00D20612 /* Combats.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
