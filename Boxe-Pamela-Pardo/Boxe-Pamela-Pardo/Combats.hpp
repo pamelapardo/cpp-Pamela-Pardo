@@ -18,6 +18,7 @@ namespace Combats{
     class Combat{
         string niveau;
         Boxeurs::Boxeur* coinBleu = nullptr;
+        Boxeurs::Boxeur* coinRouge = nullptr;
     public:
         //Constructeur parametré:
         Combat(string niveau);

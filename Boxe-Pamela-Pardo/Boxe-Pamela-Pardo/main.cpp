@@ -27,11 +27,13 @@ int main() {
     
     //Utilisation automatique d'un Combat
     Combat combat_1("Comb_1_1/8");
-    cout << endl << "****--Le combat de niveau " << combat_1.GetNiveau() << ", dans le Ring " << &combat_1 << "--****"<< combat_1.GetCoinBleu() << combat_1.SetCoinBleu(&boxeur_1) << endl;
+    combat_1.SetCoinBleu(&boxeur_1);
+    combat_1.SetCoinRouge(boxeur_2);
     
+    cout << endl << "****--Le combat de niveau " << combat_1.GetNiveau() << ", dans le Ring " << &combat_1 << "--****"<< endl;
+    cout << "boxeur 1 coins: " << endl;
     
-    //Utilisation de l'association
-    
+
     
     delete boxeur_2;
     cout << endl << "---> FIN" << endl;
