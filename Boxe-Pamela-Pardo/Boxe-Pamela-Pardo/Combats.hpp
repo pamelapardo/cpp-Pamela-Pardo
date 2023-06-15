@@ -17,6 +17,7 @@ using namespace std;
 namespace Combats{
     class Combat{
         string niveau;
+        Boxeurs::Boxeur* coinBleu = nullptr;
     public:
         //Constructeur parametré:
         Combat(string niveau);
@@ -24,13 +25,16 @@ namespace Combats{
         //Destructeur:
         ~Combat();
         
-        //Setter pour realiser l'association
+        //Setters pour realiser l'association
         Boxeurs::Boxeur* GetCoinBleu();
         Boxeurs::Boxeur* GetCoinRouge();
         string SetCoinBleu(Boxeurs::Boxeur* boxeur);
         string SetCoinRouge(Boxeurs::Boxeur* boxeur);
         Boxeurs::Boxeur* GetVainqueur();
         string DesignerVainqueur(Boxeurs::Boxeur* boxeur);
+        
+        //Setters pour realiser l'association
+        
     };
 };
 
