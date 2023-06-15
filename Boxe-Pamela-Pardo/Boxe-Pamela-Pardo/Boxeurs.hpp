@@ -9,6 +9,8 @@
 #define Boxeurs_hpp
 #include <string>
 #include <stdio.h>
+#include <iostream>
+
 using namespace std;
 
 namespace Boxeurs{
@@ -16,6 +18,7 @@ namespace Boxeurs{
         string nom;
         double poids;
     public:
+        //Constructeur parametré:
         Boxeur(string nom, double poids);
         ~Boxeur();
         
