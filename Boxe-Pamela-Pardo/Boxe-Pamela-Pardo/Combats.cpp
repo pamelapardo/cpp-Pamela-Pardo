@@ -8,16 +8,16 @@
 #include "Combats.hpp"
 #include "Boxeurs.hpp"
 #include <string>
-//#define TRACE
+#define TRACE
 
 using namespace std;
 
 namespace Combats{
     //Declaration du constructeur Combat
     Combat::Combat(string niveau){
-//#ifdef TRACE
+#ifdef TRACE
         this->niveau = niveau;
-//#ifdef TRACE
+#endif
     }
 
     string Combat::GetNiveau(){
@@ -26,9 +26,9 @@ namespace Combats{
 
     //Declaration du destructeur Combat
     Combat::~Combat(){
-//#ifdef TRACE
+#ifdef TRACE
         cout << "Destruction du combat"<< endl;
-//#ifdef TRACE
+#endif
     }
 
     //Declaration des setters

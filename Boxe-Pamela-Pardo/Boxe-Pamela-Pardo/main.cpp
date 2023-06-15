@@ -30,8 +30,10 @@ int main() {
     combat_1.SetCoinBleu(&boxeur_1);
     combat_1.SetCoinRouge(boxeur_2);
     
-    cout << endl << "****--Le combat de niveau " << combat_1.GetNiveau() << ", dans le Ring " << &combat_1 << "--****"<< endl;
-    cout << "boxeur 1 coins: " << endl;
+    cout << endl << "****--Le combat de niveau " << combat_1.GetNiveau() << ", dans le Ring " << &combat_1 << "--****"<< endl << endl;
+    cout << "###Boxeur avec les coins BLEUS: " << combat_1.GetCoinBleu()->GetNom() << endl;
+    cout << "###Boxeur avec les coins ROUGES: " << combat_1.GetCoinRouge()->GetNom() << endl << endl;
+    
     
 
     

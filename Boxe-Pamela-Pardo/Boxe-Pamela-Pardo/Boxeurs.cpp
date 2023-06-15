@@ -8,17 +8,17 @@
 #include "Boxeurs.hpp"
 #include <string>
 
-//#define TRACE
+#define TRACE
 
 using namespace std;
 
 namespace Boxeurs{
     //Declaration du constructeur Boxeur
     Boxeur::Boxeur(string nom, double poids){
-//#ifdef TRACE
+#ifdef TRACE
         this->nom = nom;
         this->poids = poids;
-//#endif
+#endif
     }
 
     string Boxeur::GetNom(){
@@ -30,8 +30,8 @@ namespace Boxeurs{
     }
     
     Boxeur::~Boxeur(){
-//#ifdef TRACE
+#ifdef TRACE
         cout << "=> Destruction de " << this->nom << " a " << this << endl;
-//#endif
+#endif
     }
 };
