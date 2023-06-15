@@ -12,8 +12,10 @@ using namespace std;
 namespace Boxeurs{
     //Declaration du constructeur
     Boxeur::Boxeur(string nom, double poids){
+//#ifdef TRACE
         this->nom = nom;
         this->poids = poids;
+//#endif
     }
 
     string Boxeur::GetNom(){
@@ -25,6 +27,8 @@ namespace Boxeurs{
     }
     
     Boxeur::~Boxeur(){
+#ifdef TRACE
         cout << "=> Destruction de " << this->nom << " a " << this << endl;
+#endif
     }
 };
